@@ -1,3 +1,3 @@
 # Enchulame el Blog.
 
-Un blog básico, para presentar una bitacora de actividades.
+Un blog básico, para presentar una bitácora de actividades.
