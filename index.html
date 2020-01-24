@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="og:title" content="Enchulame el Blog" />
+    <meta name="og:description" content="Un blog básico, para presentar una bitácora de actividades." />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/font-awesome/css/all.min.css" />
+    <link rel="shortcut icon" href="./assets/img/logo/logo.png" />
+    <script src="./assets/js/app.js" defer></script>
+    <title> Enchulame el Blog - Inicio </title>
+  </head>
+  
+  <body>
+    <div id="app" class="animated fadeInDown">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="">Enchulame el Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/tutoriales.html">Tutoriales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/AlfredoCU" target="_blank">Repositorio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section>
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/inicio/banner1.jpg" class="d-block w-100" alt="Banner 1 de bienvenida.">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Bienvenid@ a Enchulame el Blog</h1>
+                  <h5>Programar es el futuro y es nuestra gran motivación.</p>
+                </div>
+              </div>
+              <div class="carousel-item  image-opacity">
+                <img src="./assets/img/inicio/banner2.jpg" class="d-block w-100" alt="Banner 2 de nosotros.">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Nuestra Motivación</h2>
+                  <h5>Combinar el arte del diseño con el arte de la programación.</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/inicio/banner3.jpg" class="d-block w-100" alt="Banner 3 de tecnologías.">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Encontraras</h2>
+                  <h5>Hablamos de diseño, programacion, tecnologías y mucho más...</h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previo</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+        </section>
+      </header>
+
+      <main class="container mt-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Acerca de Enchulame el Blog</h5>
+                <p class="card-text text-justify">La industria del software se basa en la colaboración y el aprendizaje en red. Proporcionamos un lugar para que eso suceda.</p>
+                <p class="card-text">Feliz codificación ❤️</p>
+                <a href="./pages/tutoriales.html" class="btn btn-dark">Ir a Tutoriales</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">GitHub</h5>
+                <p class="card-text text-justify mb-0">¡Nuestra aplicación es de código abierto , lo que significa que puede inspeccionar cada pequeño detalle del código o agregarlo usted mismo!</p>
+                <em class="text-muted">¡Esperamos que juegues y te guste lo que ves!</em><br>
+                <a href="https://github.com/AlfredoCU" target="_blank" class="btn btn-dark mt-2">Ir a Repositorio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-5 mb-3">
+          <img src="./assets/img/inicio/team.jpg" class="card-img-top" alt="Equipo de trabajo.">
+          <div class="card-body">
+            <h3 class="card-title">Equipo</h3>
+            <p class="card-text text-justify">Estamos trabajando para que nuestra plataforma esté disponible para que cualquiera pueda defender comunidades similares en cualquier nicho o pasión. Creemos en la transparencia y en agregar valor al ecosistema.</p>
+            <p class="card-text text-justify">Nuestro equipo se distribuye por todo el mundo. No tenemos oficina, pero nos reunimos en línea todos los días para construir una comunidad y mejorar las carreras de software de millones.</p>
+            <p class="card-text"><small class="text-muted">Feliz codificación ❤️</small></p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Enchulame el Blog</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="">Inicio</a></li>
+          <li class="list-inline-item"><a href="./pages/tutoriales.html">Tutoriales</a></li>
+          <li class="list-inline-item"><a href="https://github.com/AlfredoCU" target="_blank">Repositorio</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

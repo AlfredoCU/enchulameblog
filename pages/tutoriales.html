@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="og:title" content="Enchulame el Blog" />
+    <meta name="og:description" content="Un blog básico, para presentar una bitácora de actividades." />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css" />
+    <link rel="shortcut icon" href="../assets/img/logo/logo.png" />
+    <script src="../assets/js/app.js" defer></script>
+    <title> Enchulame el Blog - Inicio </title>
+  </head>
+
+  <body>
+    <div id="app" class="animated fadeInDown">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="../">Enchulame el Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Tutoriales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/AlfredoCU" target="_blank">Repositorio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section>          
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Nuestros Tutoriales</h1>
+              <p class="lead">Código abierto 😇 Gratis para siempre ❤️</p>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main class="container mt-5">
+
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Enchulame el Blog</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="../">Inicio</a></li>
+          <li class="list-inline-item"><a href="">Tutoriales</a></li>
+          <li class="list-inline-item"><a href="https://github.com/AlfredoCU" target="_blank">Repositorio</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
