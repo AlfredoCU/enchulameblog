@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="og:title" content="Enchulame el Blog" />
+    <meta name="og:description" content="Un blog básico, para presentar una bitácora de actividades." />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="shortcut icon" href="../assets/img/logo/logo.png" />
+    <script src="../assets/js/app.js" defer></script>
+    <title> Enchulame el Blog - Punto de venta en Java</title>
+  </head>
+
+  <body>
+    <div id="app" class="animated fadeIn">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="../">Enchulame el Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tutoriales.html">Tutoriales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/AlfredoCU" target="_blank">Repositorio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Punto de venta en Java 💻💰💳</h1>
+              <p class="lead">Instalar Java y desarrollar un punto de venta básico que funcione en Windows y Linux. 💵💴💶💷</p>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <div class="blog-post text-justify">
+              <h2 class="blog-post-title text-left">Punto de venta en Java</h2>
+              <p class="blog-post-meta">Febrero 15, 2020 por <strong>AlfredoCU</strong></p>
+              <h3 class="text-left" id="1">Descargar e Instalar Java en Windows</h3>
+              <p>Abrimos nuestro navegador y el sitio oficial de Oracle Java, damos clic en “Aceptar e iniciar la
+                descarga”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/java/1.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Iniciará la descarga y cuando termine, el archivo se encuentra en nuestras descargas.<p>
+              <p>Damos doble clic.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/java/2.png" class="rounded mx-auto d-block w-50"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos darán la bienvenida y damos clic en “Instalar”.<p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/java/3.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Empezara la descarga del instalador.<p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/java/4.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Empezara la instalación del programa.<p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/java/5.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Termina la instalación.<p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/java/6.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Para confirmar la instalación, abrimos nuestro CMD, y escribimos el comando 
+                <code class="badge badge-pill badge-primary">
+                  java -version
+                </code>
+              <p>
+              <p>Nos muestra la versión de java instalada en nuestra computadora.
+                <span class="font-weight-bold">Ahora cualquier programa basado en java podrá ser ejecutado.</span>
+              </p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/java/7.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              
+              <h3 class="text-left" id="2">Descargar e Instalar JDK en Windows</h3>
+              <p>Para más información 
+                <a href="https://www.java.com/es/download/faq/develop.xml" target="_blank"> ¿Cómo puedo empezar a
+                  desarrollar programas Java con Java Development Kit (JDK)?</a>
+              </p>
+              <p>Abrimos nuestro navegador y el sitio oficial de Oracle Java, damos clic en “Descargar”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/1.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Damos clic en aceptar condiciones, elegimos el JDK por medio de nuestro tipo de sistema operativo, en
+                este caso todos son para arquitecturas de 64 bits, pero si buscas JDK para 32 bits lo encontraras
+                <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnes"
+                  target="_blank">aquí</a>,
+                la diferencia es que te pedirá crear una cuenta en Oracle para poder descargar el programa.
+              </p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/2.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Una vez descargado el programa, abrimos nuestra carpeta de descargas y damos doble clic sobre el
+                programa.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/3.png" class="rounded mx-auto d-block w-50"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Inicia el programa y damos clic en “Next” (Siguiente).</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/4.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos dará la bienvenida y una breve descripción.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/5.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Después nos mostrara todos los paquetes que instalara y damos clic en “Next”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/6.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Empezara la descarga.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/7.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos indicara donde almacenara los archivos del JDK, es 
+                <span
+                  class="badge badge-pill badge-danger">importante
+                </span> 
+                recordar esto y damos clic en “Siguiente”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/8.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Empezara la instalación.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/9.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Al finalizar, damos clic en “Close” (Cerrar).</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/10.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos vamos a nuestro “Disco C”, después a nuestros “Archivos de programa”, clic en la carpeta “Java” y
+                nos mostrara nuestros archivos instalados del JDK. 
+                <span class="font-weight-bold">Listo ya tenemos nuestro Java y JDK instalados
+                  en nuestra computadora.</span> 
+                </p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/jdk/11.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+
+              <h3 class="text-left" id="3">Descargar e Instalar Eclipse en Windows</h3>
+              <p>Abrimos nuestro navegador y abrimos el sitio de 
+                <a
+                  href="https://www.eclipse.org/downloads/packages/release/helios/sr1/eclipse-ide-java-developers"
+                  target="_blank">Eclipse.
+                </a>
+              </p>
+              <p>Elegimos la opción de Windows de 32 bits, si queremos una versión más resiente entonces da clic en Here
+                y te llevara a los paquetes más actuales.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/eclipse/1.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Una vez descargado, extraemos el archivo, damos doble clic y nos mostrara una carpeta llamada
+                “eclipse”, cortamos esa carpeta.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/eclipse/2.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos vamos a los “Archivos de programa” y pegamos la carpeta en este directorio.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/eclipse/3.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Abrimos la carpeta y damos doble clic en el programa llamado 
+                <span
+                  class="badge badge-pill badge-dark">eclipse
+                </span>
+              </p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/eclipse/4.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Se abrirá el programa, nos mostrará donde almacenará nuestros proyectos y damos clic en “OK”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/eclipse/5.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos dará la bienvenida, creamos un proyecto “Hola Mundo”, para verificar que todo funciona y listo.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/windows/eclipse/6.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <h3 class="text-left" id="4">Descargar e Instalar Java en Linux</h3>
+              <p>No hay que hacer nada con Java, la versión instalada por defecto en el sistema es suficiente.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/1.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <h3 class="text-left" id="5">Descargar e Instalar JDK en Linux</h3>
+              <p>También por defecto tenemos instalado JRE Y JDK, pero sino es así podemos ejecutar los siguientes comandos (antes de ser
+                ejecutados el sistema pedirá ingresar su contraseña):</p>
+              <p>Para JRE: <code class="text-primary">sudo apt-get install default-jre</code></p>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/2.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Para JDK: <code class="text-primary">sudo apt-get install default-jdk</code></p>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/3.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <h3 class="text-left" id="6">Descargar e Instalar Eclipse en Linux</h3>
+              <p>Para instalar Eclipse es con los siguientes comandos:</p>
+              <code class="text-primary">sudo apt-get install snapd</code>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/4.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <code class="text-primary">sudo snap install --classic eclipse</code>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/5.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p class="badge badge-pill badge-danger">IMPORTANTE: Reiniciamos la computadora.</p>
+              <p>Después nos vamos a nuestro menú de inicio y buscamos nuestro programa instalado, lo abrimos y nos mostrara una vista de carga.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/6.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos mostrará donde almacenará nuestros proyectos y damos clic en “Launch”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/7.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Nos da la bienvenida y nos muestra una gran variedad de recursos interesantes.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/8.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Creamos un proyecto “Hola Mundo”, para verificar que todo funciona y listo.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/linux/9.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <h3 class="text-left" id="7">Punto de venta</h3>
+              <hr>
+              <p>Creamos nuestro programa, un punto de venta.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/1.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Damos clic en “File” y en “Export”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/2.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Elegimos la opción “Runnable JAR file” y clic en “Next”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/3.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>En “Launch configuration” elegimos nuestro proyecto.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/4.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>En “Export destination” indicamos donde guardarlo.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/5.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Damos clic en “Finish”.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/6.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Ya se creó el ejecutable.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/7.png" class="rounded mx-auto d-block w-25"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Ejecutando en Windows.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/8.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Con el siguiente comando podremos ejecutar nuestro programa <code class="text-primary">java -jar SalesPoint.jar</code></p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/9.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+              <p>Ejecutando en Linux.</p>
+              <hr>
+              <img src="../assets/img/tutorial4/programa/10.png" class="rounded mx-auto d-block w-75"
+                alt="Punto de venta en Java en Windows y el Linux.">
+              <hr>
+            </div>
+            <nav class="blog-pagination">
+              <a class="btn btn-outline-primary" href="../pages/construccion.html">Siguiente -> Django</a>
+            </nav>
+          </div>
+
+          <aside class="col-md-4 blog-sidebar">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="font-italic" id="jv">¿Qué es Java?</h4>
+              <p class="text-justify"><em>"Java es un lenguaje de programación y una plataforma informática
+                  comercializada por primera vez en 1995 por Sun Microsystems. Hay muchas aplicaciones y sitios web que no
+                  funcionarán a menos que tenga Java instalado y cada día se crean más. Java es rápido, seguro y fiable.
+                  Desde portátiles hasta centros de datos, desde consolas para juegos hasta súper computadoras, desde
+                  teléfonos móviles hasta Internet, Java está en todas partes."</em></p>
+              <ol class="list-unstyled mb-0">
+                <li><a href="https://www.java.com/es/download/" target="_blank">Descargar Java</a></li>
+              </ol>
+              <h4 class="font-italic mt-4" id="jdk">¿Qué es JDK?</h4>
+              <p class="text-justify">Java Development Kit es un software que provee herramientas de desarrollo para la
+                creación de programas en Java.</p>
+              <ol class="list-unstyled mb-0">
+                <li><a href="https://www.oracle.com/technetwork/es/java/javase/downloads/index.html"
+                    target="_blank">Descargar el JDK de Java</a></li>
+              </ol>
+              <h4 class="font-italic mt-4" id="ecl">¿Qué es Eclipse?</h4>
+              <p class="text-justify">El IDE de Eclipse es famoso por nuestro Entorno de desarrollo integrado de Java
+                (IDE), una plataforma de software compuesto por un conjunto de herramientas de programación.</p>
+              <ol class="list-unstyled mb-0">
+                <li><a href="https://www.eclipse.org/downloads/packages/" target="_blank">Descargar Eclipse IDE</a></li>
+              </ol>
+              <h4 class="font-italic mt-4">Descargar código</h4>
+              <p>Se crearon ejecutables para Windows y Linux, además de contar con el código fuente.</p>
+              <ol class="list-unstyled mb-0">
+                <li><a href="../files/Punto-de-Venta.zip" download>Descargar programa</a>
+                </li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Índice</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#jv">¿Qué es Java?</a></li>
+                <li><a href="#jdk">¿Qué es JDK?</a></li>
+                <li><a href="#ecl">¿Qué es Eclipse?</a></li>
+                <li><a href="#1">Descargar e Instalar Java en Windows</a></li>
+                <li><a href="#2">Descargar e Instalar JDK en Windows</a></li>
+                <li><a href="#3">Descargar e Instalar Eclipse en Windows</a></li>
+                <li><a href="#4">Descargar e Instalar Java en Linux</a></li>
+                <li><a href="#5">Descargar e Instalar JDK en Linux</a></li>
+                <li><a href="#6">Descargar e Instalar Eclipse en Linux</a></li>
+                <li><a href="#7">Punto de venta</a></li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Repositorio</h4>
+              <ol class="list-unstyled">
+                <li><a href="https://github.com/AlfredoCU" target="_blank">GitHub</a></li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Enchulame el Blog</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="../">Inicio</a></li>
+          <li class="list-inline-item"><a href="../pages/tutoriales.html">Tutoriales</a></li>
+          <li class="list-inline-item"><a href="https://github.com/AlfredoCU" target="_blank">Repositorio</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
