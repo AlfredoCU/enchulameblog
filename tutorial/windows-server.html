@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="og:title" content="Enchulame el Blog" />
+    <meta name="og:description" content="Un blog básico, para presentar una bitácora de actividades." />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="shortcut icon" href="../assets/img/logo/logo.png" />
+    <script src="../assets/js/app.js" defer></script>
+    <title> Enchulame el Blog - Windows Server</title>
+  </head>
+
+  <body>
+    <div id="app" class="animated fadeIn">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="../">Enchulame el Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tutoriales.html">Tutoriales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/AlfredoCU" target="_blank">Repositorio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Instalar Windows Server 💻📀</h1>
+              <p class="lead"></p>Instalar Windows Server y destacar las características de Active Directory y ejemplos.
+              💽💿💾</p>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <div class="blog-post text-justify">
+              <h2 class="blog-post-title text-left" id="2">Instalación Windows Server</h2>
+              <p class="blog-post-meta">Marzo 14, 2020 por <strong>AlfredoCU</strong></p>
+              <p>Se inicia el instalador de Windows Server 2016.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/0.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Comienza la preparación de dispositivos de la computadora.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/1.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Windows Server carga los archivos esenciales para la instalación.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/2.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>El asistente de instalación de Windows Server arranca. Nos pedirá ingresar idioma, formato de hora y
+                moneda, y formato del teclado.</p>
+              <p>Damos clic en "Siguiente".</p>
+              <hr>
+              <img src="../assets/img/tutorial8/3.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Seleccionaremos que sistema operativo que queremos instalar y damos clic en “Siguiente”.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/4.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Seleccionamos la particionado donde queremos que se instale nuestro Sistema Operativo y damos clic en
+                “Siguiente”.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/5.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Arranca la instalación de Windows Server en el disco seleccionado.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/6.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Se reiniciará la computadora para iniciar los servicios para primer inicio de sesión.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/7.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Windows Server 2016 Iniciado.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/8.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+              <p>Nos vamos a propiedades del sistema y verificamos que la instalación fue todo un éxito.</p>
+              <hr>
+              <img src="../assets/img/tutorial8/9.png" class="rounded mx-auto d-block w-75" alt="Windows Server">
+              <hr>
+            </div>
+            <nav class="blog-pagination">
+              <a class="btn btn-outline-primary" href="../pages/construccion.html">Siguiente -> Administración de
+                usuarios en Windows Server</a>
+            </nav>
+          </div>
+
+          <aside class="col-md-4 blog-sidebar">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="font-italic" id="1">¿Qué es Windows Server?</h4>
+              <p class="text-justify"><em>"Windows Server es una distribución de Microsoft para el uso de servidores.
+                  Está desarrollado en el lenguaje de programación C++ y Asembler. Se trata de un sistema multiproceso y
+                  multiusuario que a día de hoy utilizan millones de empresas de todo el mundo gracias a las
+                  características y ventajas que ofrece."</em></p>
+              <h4 class="font-italic mt-5" id="3">Active Directory</h4>
+              <p class="text-justify">El Active Directory de Windows Server es el nombre con el que se hace referencia
+                al servicio de directorio en una red distribuida, este tiene una serie de ventajas en la ejecución de
+                servidores. En otras palabras Active Directory es un servicio de directorio por Windows para la
+                administración y gestión de una red de computadoras, teniendo en cuenta el acceso, dominios y carpetas
+                compartidas.</p>
+                <li class="mt-2"><strong>Intercambio entre dominios:</strong> Esto permite que los usuarios
+                  pertenecientes a un dominio puedan acceder a recursos alojados en otro dominio.</li>
+                <li class="mt-2"><strong>Confianza transitiva:</strong> Es decir confianzas de dos vías existentes entre
+                  dominios de Active Directory.</li>
+                <li class="mt-2"><strong>Confianza entre bosques:</strong> Permite la interconexión entre bosques de
+                  dominios creando relaciones transitivas de doble vía.</li>
+                <li class="mt-2"><strong>Direccionamiento a recursos:</strong> Los direccionamientos de estos tipos son
+                  aquellos que constituyen una forma local o en red de localizar un recurso.</li>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Índice</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#1">¿Qué es Windows Server?</a></li>
+                <li><a href="#2">Instalar Windows Server</a></li>
+                <li><a href="#3">Active Directory</a></li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Repositorio</h4>
+              <ol class="list-unstyled">
+                <li><a href="https://github.com/AlfredoCU" target="_blank">GitHub</a></li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Enchulame el Blog</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="../">Inicio</a></li>
+          <li class="list-inline-item"><a href="../pages/tutoriales.html">Tutoriales</a></li>
+          <li class="list-inline-item"><a href="https://github.com/AlfredoCU" target="_blank">Repositorio</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
