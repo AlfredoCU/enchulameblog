@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="og:title" content="Enchulame el Blog" />
+    <meta name="og:description" content="Un blog básico, para presentar una bitácora de actividades." />
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="shortcut icon" href="../assets/img/logo/logo.png" />
+    <script src="../assets/js/app.js" defer></script>
+    <title> Enchulame el Blog - Linux Server</title>
+  </head>
+
+  <body>
+    <div id="app" class="animated fadeIn">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="../">Enchulame el Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tutoriales.html">Tutoriales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/AlfredoCU" target="_blank">Repositorio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Linux Server 💻</h1>
+              <p class="lead"></p>Instalar Linux server y configurar 10 usuarios, configurar 4 grupos de usuarios. 👥👥</p>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <div class="blog-post text-justify">
+              <h2 class="blog-post-title text-left" id="4">Linux Server</h2>
+              <p class="blog-post-meta">Abril 25, 2020 por <strong>AlfredoCU</strong></p>
+              <p>Realizaremos los primeros pasos para crear un servidor con Debian, pero ¿Qué es un servidor? Bueno un
+                servidor es conocido como un elemento de comunicación que responde las peticiones de un cliente, y esas
+                respuestas pueden ser servicios, aplicaciones que el cliente puede utilizar o manipular utilizando los
+                recursos del servidor y no de su máquina.</p>
+              <p>Ese modelo se le conoce como “cliente servidor”, hay una gran variedad de tipos de servidores que son
+                configurados con protocolos y mantenidos por un hardware de gran capacidad para ser utilizado por varios
+                clientes de forma simultánea.</p>
+              <p>Tenemos servidores de archivos (FTP), de correo (SMTP), de impresión, de base de datos, web, telnet,
+                DNS y muchos más.</p>
+              <p>Elegimos la opción Graphical install y presionamos Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/1.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Buscamos nuestro idioma en mi caso es “Spanish – Español”, lo seleccionamos y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/2.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Elegimos nuestro país en mi caso es “México”: lo seleccionamos y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/3.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Configuramos nuestro teclado, tener en cuenta que la configuración debe ir acorde al tipo de teclado
+                que tiene la computadora. En mi caso es “Latinoamérica”, lo seleccionamos y damos clic en continuar o
+                Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/4.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Esperamos un momento</p>
+              <hr>
+              <img src="../assets/img/tutorial11/5.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Elegimos el nombre de nuestro servidor en mi caso es “alfredo”, damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/6.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Elegimos el nombre de nuestro dominio en mi caso es “carreonurbano.com”, damos clic en continuar o
+                Enter</p>
+              <hr>
+              <img src="../assets/img/tutorial11/7.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Creamos la contraseña para nuestro usuario root (super usuario), en mi caso es “servidores”, damos clic
+                en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/8.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Nombre completo para la creación de un usuario en mi caso “Alfredo Carreón Urbano”, damos clic en
+                continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/9.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Nombre del usuario esto es para la cuenta en mi caso es “alfredo”, damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/10.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Creamos la contraseña de nuestro usuario del sistema en mi caso es “kali7”, damos clic en continuar o
+                Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/11.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Configuramos la zona horaria, en mi caso es “central”, lo seleccionamos y damos clic en continuar o
+                Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/12.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Seleccionamos la opción de partición “Guiado - utiliza todo el disco”, y damos clic en continuar o
+                Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/13.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Seleccionamos el disco que vamos a particionar, y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/14.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Seleccionamos la primera opción para realizar la partición del disco, y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/15.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Sí todo va bien hasta este punto, los parámetros son correctos y procedemos con la partición,
+                Seleccionamos “Finalizar el particionado y escribir los cambios en el disto”, y damos clic en continuar
+                o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/16.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Aceptamos todos los cambios realizados al disco, y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/17.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Comenzará la instalación, esperamos unos minutos.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/18.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Cuando termine, elegimos que NO analice más discos de gestión de paquetes. y damos clic en continuar o
+                Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/19.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Elegimos que por el momento NO se utilice ninguna replica de red, y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/21.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Comenzará la instalación, esperamos unos minutos.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/22.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Elegimos NO mandar estadísticas a los desarrolladores, y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/23.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Habilitamos solamente las opciones de “Entorno de escritorio Debian” y “Utilidades estándar del
+                sistema”, y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/24.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Comenzará la instalación de los programas, esperamos unos minutos.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/25.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Aceptamos la opción del arrancador GRUB, y damos clic en continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/26.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Seleccionamos el disco duro “/dev/sda” que se habilitara como disco de arranque, y damos clic en
+                continuar o Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/27.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Terminada la instalación damos clic en continuar para que el sistema se inicie por primera vez.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/28.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Al arrancar el sistema nos sale una pantalla del GRUB, elegimos la opción Debian GNU/Linux, damos Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/29.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Damos clic en nuestro usuario.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/30.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Iniciamos sesión con nuestro usuario y contraseña, damos Enter.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/31.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>¡Listo! Estamos dentro del sistema y podrá ver el escritorio de Debian.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/32.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Desde la terminal: Creación de un nuevo usuario.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/33.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Los 4 grupos.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/34.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Listando todos los usuarios creados.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/35.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Agregando un usuario al grupo ABC.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/36.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+              <p>Mostrando todos los grupos y los usuarios asociados a estos.</p>
+              <hr>
+              <img src="../assets/img/tutorial11/37.png" class="rounded mx-auto d-block w-75" alt="Linux Server">
+              <hr>
+            </div>
+            <nav class="blog-pagination">
+              <a class="btn btn-outline-primary" href="../pages/construccion.html">Siguiente -> Rubi on Rails con Base de Datos</a>
+            </nav>
+          </div>
+
+          <aside class="col-md-4 blog-sidebar">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="font-italic" id="1">¿Qué es Debian?</h4>
+              <p class="text-justify">Debian es una organización o comunidad formada por desarrolladores y usuarios con
+                el objetivo de desarrollar y utilizar software libre, aparte popularizar la ideología del software libre.</p>
+              <p class="text-justify">Software libre está relacionada con la libertad para los usuarios y desarrolladores al
+                hablar de software libre debemos tener en cuenta el grado de libertad, existen 4 grados de libertad.</p>
+                <li><strong>Grado 0:</strong> El software se puede usar.</li>
+                <li><strong>Grado 1:</strong> El software se puede modificar.</li>
+                <li><strong>Grado 2:</strong> El software se puede distribuir.</li>
+                <li><strong>Grado 3:</strong> El software se puede distribuir y modificar.</li>
+                <p class="text-justify mt-2">La gran importancia del software libre es que nos permite ejecutar, modificar,
+                  copiar, estudiar, distribuir y mejorar el software, siempre pensando en la filosofía de libertad en el software.</p>
+                <a href="https://www.debian.org/index.es.html" target="_blank">Sitio oficial de Debian</a>
+              <h4 class="font-italic mt-4" id="2">Características del sistema.</h4>
+              <p class="text-justify">Cada versión de debían es un avance de calidad y estabilidad en el sistema
+                operativo, cada versión esta inspirada en los personajes de Toy Story.</p>
+              <p class="text-justify">En la actualidad estamos en la versión 10, lo que caracteriza a Debian es un
+                paquete de software, combina la filosófica y metodologías de software libre, es gratis y mantienen un
+                control.</p>
+              <h4 class="font-italic mt-4" id="3">Historia.</h4>
+              <p class="text-justify">Debian inicio en 1993, Murdock con una gran idea e iniciativa contribuyó con grupo
+                de desarrolladores, para crear una distribución completamente potente y coherente con el aquel
+                entonteces nuevo Kernel de Linux, creado por Linus Torvalds en 1991, gracias a él se completó el sistema
+                con su Kernel encargada de gestionar y comunicar los procesos con el hardware de la computadora (de esta
+                manera se formó el sistema GNU/LINUX).</p>
+              <p class="text-justify">Murdock junto con su equipo de trabajo, influenciados por Free Software Foundation
+                (ideas desarrolladas por Richard Stallman y los miembros de esta fundación de software libre) y la
+                filosofía de GNU (is not Unix) proyecto también fundado por Richard Stallman en 1984.</p>
+              <p class="text-justify">La comunidad en la actualizad son de las más populares y constantemente en
+                crecimiento.</p>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Índice</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#1">¿Qué es Debian?</a></li>
+                <li><a href="#2">Características del sistema</a></li>
+                <li><a href="#3">Historia</a></li>
+                <li><a href="#4">Linux Server</a></li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Repositorio</h4>
+              <ol class="list-unstyled">
+                <li><a href="https://github.com/AlfredoCU" target="_blank">GitHub</a></li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Enchulame el Blog</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="../">Inicio</a></li>
+          <li class="list-inline-item"><a href="../pages/tutoriales.html">Tutoriales</a></li>
+          <li class="list-inline-item"><a href="https://github.com/AlfredoCU" target="_blank">Repositorio</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
