@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="og:title" content="Enchulame el Blog" />
+    <meta name="og:description" content="Un blog básico, para presentar una bitácora de actividades." />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="shortcut icon" href="../assets/img/logo/logo.png" />
+    <script src="../assets/js/app.js" defer></script>
+    <title> Enchulame el Blog - Django con Base de Datos</title>
+  </head>
+
+  <body>
+    <div id="app" class="animated fadeIn">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="../">Enchulame el Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tutoriales.html">Tutoriales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/AlfredoCU" target="_blank">Repositorio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Django con Base de Datos 💻</h1>
+              <p class="lead"></p>Instalar un sistema en Django con bases de datos y asignar diferentes permisos de
+              acceso a los grupos de usuarios en cada sistema. 👥👥</p>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <div class="blog-post text-justify">
+              <h2 class="blog-post-title text-left" id="2">Django con Base de Datos</h2>
+              <p class="blog-post-meta">Marzo 28, 2020 por <strong>AlfredoCU</strong></p>
+              <p>Reutilizando la práctica pasada de Django, vamos a utilizar nuestras vistas, controladores y modelos ya
+                realizados.</p>
+              <p>Vamos a crear una conexión a una base de datos y vamos a agregar más validaciones para generar a cada
+                uno de nuestros usuarios un rol con n permisos en él sistema.</p>
+              <p>Podemos registrar un usuario.</p>
+              <hr>
+              <img src="../assets/img/tutorial10/1.png" class="rounded mx-auto d-block w-75" alt="Django con Base de Datos">
+              <hr>
+              <p>Iniciar sesión.</p>
+              <hr>
+              <img src="../assets/img/tutorial10/2.png" class="rounded mx-auto d-block w-75"
+                alt="Django con Base de Datos">
+              <hr>
+              <p>Y salir de la sesión.</p>
+              <hr>
+              <img src="../assets/img/tutorial10/3.png" class="rounded mx-auto d-block w-75"
+                alt="Django con Base de Datos">
+              <hr>
+              <p>Este es el diagrama de nuestra base de datos, la cual implementamos, creamos una lógica muy común en
+                manejo de roles y permisos para los usuarios.</p>
+              <hr>
+              <img src="../assets/img/tutorial10/4.png" class="rounded mx-auto d-block w-75"
+                alt="Django con Base de Datos">
+              <hr>
+            </div>
+            <nav class="blog-pagination">
+              <a class="btn btn-outline-primary" href="../pages/construccion.html">Siguiente -> Linux Server</a>
+            </nav>
+          </div>
+
+          <aside class="col-md-4 blog-sidebar">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="font-italic" id="1">Django</h4>
+              <p class="text-justify">Para más información consulta nuestro tutorial:</p>
+              <a href="../tutorial/django.html">Django</a>
+              <h4 class="font-italic mt-4">Descargar código</h4>
+              <p class="text-justify">Se crearon ejecutables para Windows y Linux, además de contar con el código
+                fuente.</p>
+              <ol class="list-unstyled mb-0">
+                <li><a href="../files/DjangoBD.zip" download>Descargar programa</a>
+                </li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Índice</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#1">Django</a></li>
+                <li><a href="#2">Django con Base de Datos</a></li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="font-italic">Repositorio</h4>
+              <ol class="list-unstyled">
+                <li><a href="https://github.com/AlfredoCU" target="_blank">GitHub</a></li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Enchulame el Blog</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="../">Inicio</a></li>
+          <li class="list-inline-item"><a href="../pages/tutoriales.html">Tutoriales</a></li>
+          <li class="list-inline-item"><a href="https://github.com/AlfredoCU" target="_blank">Repositorio</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
